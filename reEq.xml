@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="53">
-            <field name="TEXT">1 equals  2=</field>
+            <field name="TEXT">1     equals  2=</field>
             <next>
               <block type="oled_drawnumber" id="69" inline="true">
                 <value name="NUMBER">
@@ -44,6 +44,30 @@
                         <field name="NUM">10</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="oled_drawtext" id="145">
+                        <field name="TEXT">1 NOT equals 2</field>
+                        <next>
+                          <block type="oled_drawnumber" id="146" inline="true">
+                            <value name="NUMBER">
+                              <block type="logic_compare" id="147" inline="true">
+                                <field name="OP">NEQ</field>
+                                <value name="A">
+                                  <block type="math_number" id="148">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="149">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
