@@ -29,7 +29,7 @@
                       <block type="oled_drawnumber" id="9" inline="true">
                         <value name="NUMBER">
                           <block type="logic_compare" id="10" inline="true">
-                            <field name="OP">LT</field>
+                            <field name="OP">GT</field>
                             <value name="A">
                               <block type="sensor_light" id="29">
                                 <field name="LIGHT">LEFT</field>
@@ -61,7 +61,7 @@
                                   <block type="oled_drawnumber" id="17" inline="true">
                                     <value name="NUMBER">
                                       <block type="logic_compare" id="18" inline="true">
-                                        <field name="OP">LT</field>
+                                        <field name="OP">GT</field>
                                         <value name="A">
                                           <block type="sensor_light" id="30">
                                             <field name="LIGHT">LEFT</field>
